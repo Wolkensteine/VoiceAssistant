@@ -1,0 +1,55 @@
+{
+  "CommandCount": 5,
+  "activation word": "robot",
+  "start message": "I am your robot assistant, how may I help you?",
+  "ttsmodel": "en_GB-alan-medium",
+  "0": {
+    "title": "ShutDown",
+    "command": "exit",
+    "comment": "Shutting down.",
+    "key word": "shut down",
+    "key": ""
+  },
+  "1": {
+    "title": "LockComputer",
+    "command": "execute",
+    "comment": "Your computer was locked Sir.",
+    "key word": "lock my computer",
+    "key": "",
+    "cmd": "cinnamon-screensaver-command --lock"
+  },
+  "2": {
+    "title": "OpenWebpage",
+    "command": "Webbrowser",
+    "comment": "Opened website: &additionalData",
+    "key word": "open",
+    "key": "&additionalData",
+    "baseURL": "https://",
+    "replace spaces": ""
+  },
+  "3": {
+    "title": "SearchWithEcosia",
+    "command": "Webbrowser",
+    "comment": "Searched &additionalData for you.",
+    "key word": "search for",
+    "key": "&additionalData",
+    "baseURL": "https://ecosia.org/search?q=",
+    "replace spaces": "+"
+  },
+  "4": {
+    "title": "PauseAudio",
+    "command": "execute",
+    "comment": "Paused your playing audio.",
+    "key word": "pause the audio",
+    "key": "",
+    "cmd": "playerctl pause"
+  },
+  "5": {
+    "title": "PlayAudio",
+    "command": "execute",
+    "comment": "Your audio is now playing.",
+    "key word": "play the audio",
+    "key": "",
+    "cmd": "playerctl play"
+  }
+}
